@@ -5,6 +5,7 @@ namespace NFT_DB_API.Models
 {
     public class NFT
     {
+        // Not Required
         public Contract contract { get; set; }
 
         // The JSON passes a string, even though it's an INT
