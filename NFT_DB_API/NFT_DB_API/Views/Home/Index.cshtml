@@ -1,8 +1,15 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model NFT_DB_API.ViewModels.NFTQueryViewModel
+@{
+    ViewData["Title"] = "Welcome!";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+    <h1 class="display-4">Welcome to the ASP.NET NFT Demo!</h1>
+    @using(Html.BeginForm("Index", "NFTGallery"))
+    {
+        <div class="form-group">
+            @Html.TextBoxFor(m => m.Limit, new {@class = "form-control"})
+        </div>
+        <button type="submit">SUBMIT</button>
+    }
+
