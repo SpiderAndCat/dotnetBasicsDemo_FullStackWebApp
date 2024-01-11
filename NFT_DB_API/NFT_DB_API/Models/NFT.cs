@@ -3,6 +3,11 @@ using System.Diagnostics.Contracts;
 
 namespace NFT_DB_API.Models
 {
+
+    public class NFTList
+    {
+        public List<NFT> nfts { get; set; }
+    }
     public class NFT
     {
         // Not Required
