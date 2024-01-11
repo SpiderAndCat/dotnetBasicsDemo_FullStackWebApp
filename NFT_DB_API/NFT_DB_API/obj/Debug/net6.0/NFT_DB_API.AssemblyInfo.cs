@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NFT_DB_API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f7960fd586b67f8ab1bb7efc26b26b3ae96c5f68")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec0d8db08a45502a57e245e554cdfd111cd50ed4")]
 [assembly: System.Reflection.AssemblyProductAttribute("NFT_DB_API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NFT_DB_API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

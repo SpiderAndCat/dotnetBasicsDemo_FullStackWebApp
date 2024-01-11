@@ -5,16 +5,35 @@ using System.IO.MemoryMappedFiles;
 using System.Runtime.ExceptionServices;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using System.Xml.Linq;
+
 
 namespace NFT_DB_API.Controllers
 {
     public class NFTGalleryController : Controller
     {
-        public ViewResult GetNFTs()
-        {
-            return View();
+
+
+        /*
+        public ViewResult AddNFTs(NFT newNFT)
+        {// Add the current NFT to the DB
+            // Get NFTs from the DB
+            // Return all the NFTs to the view
+            NFTList nfts = new NFTList();
+
+
+                
+
+
+            return View(nfts);
         }
-        public async Task<ViewResult> Index(NFTQueryViewModel lim)
+            */
+
+
+
+
+
+public async Task<ViewResult> Index(NFTQueryViewModel lim)
         {
             // For this use case, the HttpClient is only used once
             // To to clean resources, using{} is utilized, to clear the HttpClient when out of scope
