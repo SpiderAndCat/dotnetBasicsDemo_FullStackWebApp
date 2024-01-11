@@ -9,20 +9,18 @@ namespace NFT_DB_API.Controllers
 {
     public class NFTGalleryController : Controller
     {
-        public async Task<ViewResult> Index()
+        public async Task<ViewResult> Index(int limit=2)
         {
             // For this use case, the HttpClient is only used once
             // To to clean resources, using{} is utilized, to clear the HttpClient when out of scope
             using (var httpClient = new HttpClient())
             {
-                //const string API_URL = "https://eth-mainnet.g.alchemy.com/nft/v3/WwNubjj7sBMCmY53SIbT7Y3415W6MwbJ/getNFTMetadata?contractAddress=0xBd3531dA5CF5857e7CfAA92426877b022e612cf8&tokenId=0&refreshCache=false";
-                const string API_URL = "https://eth-mainnet.g.alchemy.com/nft/v3/WwNubjj7sBMCmY53SIbT7Y3415W6MwbJ/getNFTsForContract?contractAddress=0xBd3531dA5CF5857e7CfAA92426877b022e612cf8&withMetadata=true&limit=2";
-
+                const string API_URL = "https://eth-mainnet.g.alchemy.com/nft/v3/WwNubjj7sBMCmY53SIbT7Y3415W6MwbJ/getNFTsForContract?contractAddress=0xBd3531dA5CF5857e7CfAA92426877b022e612cf8&withMetadata=true&limit=";
 
                 try
                 {
                     // For ease of use and time, there will be 1 independant calls, and the rest will be manually generated
-                    var response = await httpClient.GetStringAsync(API_URL);
+                    var response = await httpClient.GetStringAsync(API_URL + limit.ToString());
                     //NFT firstnft = JsonSerializer.Deserialize<NFT>(response);
 
 
