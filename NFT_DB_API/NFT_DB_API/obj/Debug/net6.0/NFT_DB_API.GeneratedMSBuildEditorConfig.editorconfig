@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\spiderandcat\Documents\GitHub\JuniorFullStackWebDev_ASPdotNET_Demo\NFT_DB_API\NFT_DB_API
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/spiderandcat/Documents/GitHub/JuniorFullStackWebDev_ASPdotNET_Demo/NFT_DB_API/NFT_DB_API/Views/AddNFT/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRkTkZUXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/spiderandcat/Documents/GitHub/JuniorFullStackWebDev_ASPdotNET_Demo/NFT_DB_API/NFT_DB_API/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
