@@ -1,0 +1,19 @@
+﻿@model NFT_DB_API.Models.NFT
+@{
+    ViewData["Title"] = "Welcome!";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to the ASP.NET NFT Demo!</h1>
+    @using (Html.BeginForm("AddNFTs", "NFTGallery"))
+    {
+        <div class="form-group">
+            <p>NFT Name</p>
+            @Html.TextBoxFor(m => m.name, new { @class = "form-control" })
+            <p>Image URL</p>
+            @Html.TextBoxFor(m => m.image.originalUrl, new { @class = "form-control" })
+
+        </div>
+        <button type="submit">ADD NFT</button>
+    }
+
