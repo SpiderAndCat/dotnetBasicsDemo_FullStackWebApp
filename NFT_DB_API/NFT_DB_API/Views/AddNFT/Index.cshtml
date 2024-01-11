@@ -9,18 +9,18 @@
         {
             alert("Error: NFT Name needed, but not image")
         } else {
-            document.getElementById("added").innerHTML = "Success! NFT Added";
+            document.getElementById("added").innerHTML = "Success! NFT Added. Click on Home to use demo again";
 
         }
     
     }
 </script>
-    <h1 class="display-4">Welcome to the ASP.NET NFT Demo!</h1>
+    <h1 class="title">Enter your NFT Name (Required) and Image URL (Optional)</h1>
     
         <div class="form-group">
-            <p>NFT Name</p>
+            <p class="subtitle">NFT Name</p>
             <input id="nameInput" type="text"/>
-            <p>Image URL</p>
+            <p class="subtitle">Image URL</p>
             <input type="text"/>
         </div>
         <button onclick="addedNFT()">ADD NFT</button>
