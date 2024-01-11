@@ -1,0 +1,14 @@
+﻿@model List<NFT_DB_API.Models.NFT>
+@{
+    <ul>
+        @foreach (NFT nft in Model)
+        {
+            <ul>
+                <li>@nft.Name</li>
+                <li>@nft.TokenID</li>
+                <li>@nft.Image.URL</li>
+
+            </ul>
+        }
+    </ul>
+}

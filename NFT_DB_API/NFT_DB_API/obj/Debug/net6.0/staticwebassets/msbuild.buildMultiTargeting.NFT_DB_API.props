@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\NFT_DB_API.props" />
+</Project>
