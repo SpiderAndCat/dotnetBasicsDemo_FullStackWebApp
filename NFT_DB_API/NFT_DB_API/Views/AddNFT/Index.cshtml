@@ -2,18 +2,29 @@
 @{
     ViewData["Title"] = "Welcome!";
 }
+<script>
+    function addedNFT() {
 
-<div class="text-center">
+        if (document.getElementById("nameInput").value.length == 0)
+        {
+            alert("Error: NFT Name needed, but not image")
+        } else {
+            document.getElementById("added").innerHTML = "Success! NFT Added";
+
+        }
+    
+    }
+</script>
     <h1 class="display-4">Welcome to the ASP.NET NFT Demo!</h1>
-    @using (Html.BeginForm("AddNFTs", "NFTGallery"))
-    {
+    
         <div class="form-group">
             <p>NFT Name</p>
-            @Html.TextBoxFor(m => m.name, new { @class = "form-control" })
+            <input id="nameInput" type="text"/>
             <p>Image URL</p>
-            @Html.TextBoxFor(m => m.image.originalUrl, new { @class = "form-control" })
-
+            <input type="text"/>
         </div>
-        <button type="submit">ADD NFT</button>
-    }
+        <button onclick="addedNFT()">ADD NFT</button>
+    
+
+<p id="added"></p>
 

@@ -7,13 +7,14 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Xml.Linq;
 
+
 namespace NFT_DB_API.Controllers
 {
     public class NFTGalleryController : Controller
     {
 
 
-
+        /*
         public ViewResult AddNFTs(NFT newNFT)
         {// Add the current NFT to the DB
             // Get NFTs from the DB
@@ -26,7 +27,7 @@ namespace NFT_DB_API.Controllers
 
             return View(nfts);
         }
-            
+            */
 
 
 
