@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "NFT_DB_API/1.0.0": {
+        "runtime": {
+          "NFT_DB_API.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NFT_DB_API/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

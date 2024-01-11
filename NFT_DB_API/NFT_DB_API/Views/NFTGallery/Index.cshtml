@@ -1,0 +1,26 @@
+﻿@model NFT_DB_API.Models.NFTList
+@{
+    @Html.ActionLink("Click to Add NFT", "Index", "AddNFT")
+    <br>
+    <br>
+    <br>
+
+    <h1 class="title">Queried NFTs</h1>
+    <br>
+    <ul style="list-style-type: none">
+    
+    @foreach (var nft in Model.nfts)
+        {
+            @if (nft.image?.originalUrl != null)
+            {
+                <li><img src=@nft.image?.originalUrl style="width: 120px" /></li>
+            }
+            <li><h2 class="name subtitle"><b>NFT Name:</b> @nft.name</h2></li>
+            <li><h3 class="id">Token ID: @nft.tokenId</h3></li>
+            
+            <br>
+        }
+        
+    </ul>
+}
+

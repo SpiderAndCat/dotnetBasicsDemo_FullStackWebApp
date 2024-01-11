@@ -1,0 +1,20 @@
+﻿@model NFT_DB_API.ViewModels.NFTQueryViewModel
+@{
+    ViewData["Title"] = "NFT API Demo";
+}
+
+<div class="text-center">
+    <h1 class="title">Welcome to the ASP.NET NFT Demo!</h1>
+    <h2 class="subtitle" >Please enter a number of results for the API call to return</h2>
+    <h4 >(there is currently no checking for type or number range. Index() defaults to size 2 query)</h4>
+
+
+    @using (Html.BeginForm("Index", "NFTGallery"))
+    {
+        <div class="form-group">
+            @Html.TextBoxFor(m => m.Limit, new { @class = "form-control" })
+        </div>
+        <button type="submit">QUERY NFTs</button>
+    }
+
+
