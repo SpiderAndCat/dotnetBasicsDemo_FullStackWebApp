@@ -18,8 +18,30 @@ The Green and Lightcoral label styling is also universal across views, as the st
 `Models > NFT.cs`
 NFT is the main Model, for which the NFT objects are organized. The Alchemy API call returns a JSON string, which is then mapped as to the NFTList model (which is -- you guessed it -- a list of NFT models). The NFT model was designed specifically to match the API JSON format, which is an array of NFT objects, looking something like this:
 ```
-
+{
+            "nfts": [
+                {
+                    "contract": {<more stuff>}
+                    "tokenId": "<value>",
+                    "name": "<value>",
+                    <more stuff>
+                    "image": {
+                        "originalUrl": "<https IPFS URL>",
+                        <more stuff>
+                    }
+                }
+            ]
+        }
 ```
+
+
+`ImageStructure` and `Contract` -- while essential elements from the API call -- were coded in the `NFT.cs` model as optional, to demonstrate that even if those elements in the payload were empty, the code would still function. 
+
+The HttpRequest for the API call is also an `async` function, with error handling for a `JsonException` or `HttpRequestException`
 
 ## Improvements:
 In `AddNFTs`, the NFt actually isn't "saved". To actually be saved, what could further be coded is integrating Entity migrations, to store the actual API NFTList model data into a local realtional DB. Then, when an NFT is "saved", it could be written to the NFTs table (based on the NFT.cs object model). Where the NFTGallery view would then display all NFTs from the local DB (what was originally quried, plus any the user adds afterwards)
+
+Better styling could be applied to. And some elements like the buttons are not universally styled due to time constraints, but the `title` and `subtitle` elements on each page are common, to demonstrate some styling logic. Furthermore, the layouts being dynamic (although fairly simple) to fit on desktop and mobile screens.
+
+Also ensuring that text field entries (on Home and AddNFTs) recieve valid input types, and integer ranges where applicable, are an important addition to be made for not only UX, but also fault tolerance and error handling. And considering the API call has an upper limit of 100 elements to be queried, an input larger than that should be prohibited. 
