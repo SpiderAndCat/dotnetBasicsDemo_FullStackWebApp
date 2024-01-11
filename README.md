@@ -3,6 +3,12 @@
 MVC structuring, API calls, form entry, and layout are all successfully integrated together, bringing the basic demo to life! Try it for yourself! Just clone and open the .sln on main branch (the stable release), and run the VS project (http on localhost).
 
 Also feel free to explore the different branches, commits (and comments!), and chronology of each, to see the development journey and breakdown.
+<img width="1078" alt="Screenshot 2024-01-10 at 10 12 18 PM" src="https://github.com/SpiderAndCat/JuniorFullStackWebDev_ASPdotNET_Demo/assets/130514366/03ef6b31-851f-4a1a-a675-973b976d9004">
+<img width="1079" alt="Screenshot 2024-01-10 at 10 12 29 PM" src="https://github.com/SpiderAndCat/JuniorFullStackWebDev_ASPdotNET_Demo/assets/130514366/d0b8d490-3cf9-45f6-8064-cc9a2927da4f">
+<img width="1080" alt="Screenshot 2024-01-10 at 10 12 48 PM" src="https://github.com/SpiderAndCat/JuniorFullStackWebDev_ASPdotNET_Demo/assets/130514366/77913102-379b-4069-aa6b-7f6b49abb90d">
+
+<img width="1078" alt="Screenshot 2024-01-10 at 10 13 04 PM" src="https://github.com/SpiderAndCat/JuniorFullStackWebDev_ASPdotNET_Demo/assets/130514366/d0d11248-b77c-4939-a755-fee9fb4acafb">
+
 
 ## User Experience
 `url/`
